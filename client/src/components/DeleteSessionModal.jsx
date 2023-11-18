@@ -8,7 +8,7 @@ const DeleteSessionModal = ({ raceWeekendId }) => {
     const handleDelete = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:3000/weekend/race/delete', {
+            const response = await fetch('https://mercedesamgf1service.onrender.com/weekend/race/delete', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ const TrackRaceWeekends = () => {
         document.body.style.overflow = 'auto';
         const getRaceWeekendsData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/weekend/race/fetch', {
+                const response = await fetch('https://mercedesamgf1service.onrender.com/weekend/race/fetch', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
